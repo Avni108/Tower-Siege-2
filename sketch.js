@@ -147,20 +147,11 @@ function keyPressed() {
 }
 
 function detectCollision(lpolygon,lblock){
-	/*var collision = Matter.SAT.collides(lstone,lmango);
-	if(collision.collided){
-		console.log("collided");
-		Matter.Body.setStatic(lmango,false);	
-	}*/
   blockBodyPosition=lblock.body.position;
   polygonBodyPosition=lpolygon.body.position;
-  
   var distance=dist(polygonBodyPosition.x, blockBodyPosition.y, blockBodyPosition.x, blockBodyPosition.y)
-  //console.log(distance)
- // console.log(lmango.r+lstone.r)
   	if(distance<=lblock.r+lpolygon.r)
     {
-      //console.log(distance);
   	  Matter.Body.setStatic(lblock.body,false);
     }
 
