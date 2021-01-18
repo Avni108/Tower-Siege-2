@@ -29,6 +29,7 @@ class Box{
        World.remove(world,this.body);
        push();
        this.visibility = this.visibility-5;
+       tint(255,this.Visiblity);  
        pop();   
      }
     }
