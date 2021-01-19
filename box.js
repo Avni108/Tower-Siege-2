@@ -6,7 +6,7 @@ class Box{
             density:1.2,
             //isStatic:true
         }
-        this.visibility = 225;
+        this.visibility = 252;
         this.body = Bodies.rectangle(x,y,width,height,options);
         this.width = width;
         this.height = height;
